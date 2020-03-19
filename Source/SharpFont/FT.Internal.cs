@@ -83,7 +83,7 @@ namespace SharpFont
 		/// Defines the location of the FreeType DLL. Update SharpFont.dll.config if you change this!
 		/// </summary>
 		/// TODO: Use the same name for all platforms.
-	    private const string FreetypeDll = "freetype6";
+	    private const string FreetypeDll = "libfreetype-6";
 
 		/// <summary>
 		/// Defines the calling convention for P/Invoking the native freetype methods.
@@ -108,7 +108,7 @@ namespace SharpFont
 		#endregion
 
 		#region Base Interface
-		
+
 		[DllImport(FreetypeDll, CallingConvention = CallConvention)]
 		internal static extern Error FT_Init_FreeType(out IntPtr alibrary);
 
