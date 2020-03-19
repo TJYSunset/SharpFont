@@ -84,7 +84,7 @@ namespace SharpFont
 				return rec.@base;
 			}
 		}
-		
+
 		/// <summary>
 		/// Gets the stream size in bytes.
 		/// </summary>
@@ -190,7 +190,7 @@ namespace SharpFont
 			}
 		}
 
-		internal override IntPtr Reference
+		public override IntPtr Reference
 		{
 			get
 			{
